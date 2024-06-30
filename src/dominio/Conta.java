@@ -27,6 +27,10 @@ public abstract class Conta implements IConta {
 	public double getSaldo() {
 		return this.saldo;
 	}
+	
+	public Cliente getCliente() {
+		return cliente;
+	}
 
 	@Override
 	public void sacar(double valor) {

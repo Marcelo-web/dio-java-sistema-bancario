@@ -57,4 +57,18 @@ public class Banco {
 			System.out.println("Não existem contas cadastradas!");
 		}
 	}
+	
+	public void listarClientes() {
+		System.out.println("=== Lista de Clientes ===");
+		if(!contas.isEmpty()) {
+			for(Conta conta : contas) {
+				String tipoConta = conta.getClass()
+						.getSimpleName()
+						.equalsIgnoreCase("contacorrente") ? "Corrente" : "Poupança";
+				
+				System.out.print("Titular: " + conta.getCliente().getNome() + " => Conta: " );
+				System.out.println(tipoConta);
+			}
+		}
+	}
 }

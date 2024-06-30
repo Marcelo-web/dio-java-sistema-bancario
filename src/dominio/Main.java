@@ -25,7 +25,8 @@ public class Main {
 		poupanca.imprimirExtrato();
 		
         banco.removerConta(cc);
-        banco.listarContas();
+        banco.listarContas();     
+        banco.listarClientes();
         
 	}
 }
