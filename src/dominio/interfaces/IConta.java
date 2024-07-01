@@ -1,4 +1,4 @@
-package dominio;
+package dominio.interfaces;
 
 public interface IConta {
 

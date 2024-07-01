@@ -1,4 +1,4 @@
-package dominio;
+package dominio.exceptions;
 
 public class ErrorOperationException extends RuntimeException {
    
